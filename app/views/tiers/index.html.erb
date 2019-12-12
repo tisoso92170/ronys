@@ -2,5 +2,52 @@
 <%= render "navTiers", :layout => "application" %>
 
 <div class="container-tiers">
-    <h1>ma liste de tiers</h1>
+    <div class="table-info">
+        <h1 class="label-table">Listes des tiers</h1>
+    </div>
+        <div class="table-container">
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <thead class="is-danger">
+                    <th>Nom du tiers</th>
+                    <th>Nom alternatif</th>
+                    <th>Code client</th>
+                    <th>Adresse du tiers</th>
+                    <th>Ville</th>
+                    <th>Code Postale</th>
+                    <th>type du tiers</th>
+                    <th>Téléphone</th>
+                    <th>Email</th>
+                    <th>Type de tiers</th>
+                    <th>Etat</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#">Adenorm SARL</a></td>
+                        <td>Adenorm</td>
+                        <td>CU1912-00001</td>
+                        <td>38 RUE DUNOIS</td>
+                        <td>75013</td>
+                        <td>PARIS 13E</td>
+                        <td>PME/PMI</td>
+                        <td>01.52.66.88.73</td>
+                        <td>contact@adenorm.com</td>
+                        <td>Client / fournisseur </td>
+                        <td><strong class="etat">Ouvert<strong></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">CLAUROSOMES SAS</a></td>
+                        <td>CLauresom</td>
+                        <td>CU1912-00002</td>
+                        <td>38 AVENUE DUNOIS</td>
+                        <td>77140</td>
+                        <td>ST-PIERRE-LES NEMOURS</td>
+                        <td>PME/PMI</td>
+                        <td>01.52.66.88.73</td>
+                        <td>contact@adenorm.com</td>
+                        <td>Client / fournisseur </td>
+                        <td><strong class="etat">Ouvert<strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 </div>

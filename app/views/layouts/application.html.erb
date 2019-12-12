@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ronys</title>
+	<title>Ronys</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -117,6 +117,15 @@
 			</div>
 		</div>
 		</nav>
-    <%= yield %>
+	<%= yield %>
+	<script>
+    $("#showModal").click(function() {
+        $(".modal").addClass("is-active");  
+    });
+    
+    $(".modal-close").click(function() {
+        $(".modal").removeClass("is-active");
+    });
+	</script>
   </body>
 </html>

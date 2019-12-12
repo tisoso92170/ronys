@@ -1,0 +1,125 @@
+<%= render "navTiers", :layout => "application" %>
+
+<div class="container-tiers">
+    <header class="modal-card-head">
+        <p class="modal-card-title">Création d'un nouveau tiers</p>
+    </header>
+    <%= form_with scope: :tier, class: "is-border", local: true do |f| %>
+        <table class=" table is-narrow">
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><%= f.label :nom_ou_raison_social, class: "label-input" %><br></td>
+                    <td><%= f.text_field :name, class: "input" %></td>
+                </tr>
+                <tr>
+                    <th><%= f.label :nom_alternatif, class: "label-input" %><br></th>
+                    <th><%= f.text_field :alternate_name, class: "input" %></th>
+                </tr>
+                <tr>
+                    <th><%= f.label :prospect_client, class: "label-input" %><br></th>
+                    <th><%= f.text_field :prospect_customer, class: "input" %></th>
+                    <th><%= f.label :code_client, class: "label-input" %><br></th>
+                    <th><%= f.text_field :code_customer, class: "input" %></th>
+
+                </tr>
+                <tr>
+                    <th><%= f.label :fournisseur?, class: "label-input" %><br></th>
+                    <th><%= f.check_box :provider?, class: "checkbox" %></th>
+                    <th><%= f.label :etat, class: "label-input" %><br></th>
+                    <th><%= f.text_field :etat, class: "input" %></th>
+                </tr>
+                <tr>
+                    <th><%= f.label :Adresse, class: "label-input" %><br></th>
+                    <th><%= f.text_area :adress, class: "textarea is-small" %></th>
+                </tr>
+                <tr>
+                    <th><%= f.label :code_postale, class: "label-input" %><br></th>
+                    <th><%= f.text_field :zip_code, class: "input" %></th>
+                    <th><%= f.label :Ville, class: "label-input" %><br></th>
+                    <th><%= f.text_field :city, class: "input" %></th>
+                </tr>
+                <tr>
+                    <th><%= f.label :Pays, class: "label-input" %><br></th>
+                    <th><%= f.text_field :country, class: "input" %></th>
+                    <th><%= f.label :Département_région, class: "label-input" %><br></th>
+                    <th><%= f.text_field :department, class: "input" %></th>
+                    <th><%= f.label :Site_internet, class: "label-input" %><br></th>
+                    <th><%= f.text_field :website, class: "input" %></th>
+                </tr>
+
+                <tr>
+                    <th><%= f.label :Téléphone, class: "label-input" %><br></th>
+                    <th><%= f.text_field :phone, class: "input" %></th>
+                    <th><%= f.label :Télécopie, class: "label-input" %><br></th>
+                    <th><%= f.text_field :fax, class: "input" %></th>
+                    <th><%= f.label :Adresse_email, class: "label-input" %><br></th>
+                    <th><%= f.text_field :email, class: "input" %></th>
+                </tr>
+
+                <tr>
+                    <th><%= f.label :Numero_SIREN, class: "label-input" %><br></th>
+                    <th><%= f.text_field :num_siren, class: "input" %></th>
+                    <th><%= f.label :Numéro_SIRET, class: "label-input" %><br></th>
+                    <th><%= f.text_field :num_siret, class: "input" %></th>
+                    <th><%= f.label :code_APE, class: "label-input" %><br></th>
+                    <th><%= f.text_field :num_ape, class: "input" %></th>
+                    <th><%= f.label :Numéro_RCS, class: "label-input" %><br></th>
+                    <th><%= f.text_field :num_rcs, class: "input" %></th>
+                </tr>
+
+                <tr>
+                    <th><%= f.label :fournisseur?, class: "label-input" %><br></th>
+                    <th><%= f.check_box :provider?, class: "checkbox" %></th>
+                    <th><%= f.label :etat, class: "label-input" %><br></th>
+                    <th><%= f.text_field :etat, class: "input" %></th>
+                </tr>
+                <tr>
+                    <th><%= f.label :Assujetti_à_la_tva_?, class: "label-input" %><br></th>
+                    <th><%= f.check_box :assuj_tva?, class: "checkbox" %></th>
+                    <th><%= f.label :Numéro_de_TVA, class: "label-input" %><br></th>
+                    <th><%= f.text_field :num_tva, class: "input" %></th>
+                </tr>
+
+                <tr>
+                    <th><%= f.label :Type_du_tiers, class: "label-input" %><br></th>
+                    <th><%= f.text_field :third_party_type, class: "input" %></th>
+                    <th><%= f.label :Salariés, class: "label-input" %><br></th>
+                    <th><%= f.number_field :employees, class: "input" %></th>
+                    <th><%= f.label :Type_Entité_légale, class: "label-input" %><br></th>
+                    <th><%= f.text_field :legale_entity_type, class: "input" %></th>
+                    <th><%= f.label :Ecoterms, class: "label-input" %><br></th>
+                    <th><%= f.text_field :eco_terms, class: "input" %></th>
+                </tr>
+
+                <tr>
+                    <th><%= f.label :Capital, class: "label-input" %><br></th>
+                    <th><%= f.number_field :capital, class: "input" %></th>
+                    <th><%= f.label :Devise, class: "label-input" %><br></th>
+                    <th><%= f.text_field :devise, class: "input" %></th>
+                    <th><%= f.label :Commercial, class: "label-input" %><br></th>
+                    <th><%= f.text_field :commercial, class: "input" %></th>
+                </tr>
+                
+                <tr>
+                    <th><%= f.label :Logo, class: "label-input" %><br></th>
+                    <th><%= f.file_field :logo, class: "input" %></th>
+                </tr>
+
+            </tr>
+            </tbody>
+        </table
+
+        <footer class="modal-card-foot">
+            <div class="columns">
+                <div class="column" style="margin-bottom: 10px; margin-left: 10px;">
+                <button class="button is-large is-fullwidth is-success"><i class="fa fa-save">  Sauvegarder</i></button>
+                </div>
+                <div class="column" style="margin-right: 10px;">
+                    <button class="button is-large is-fullwidth is-danger"><i class="fa fa-window-close">  Annuler</i></button>
+                </div>
+            </div>
+        </footer>
+    <% end %>
+</div>
