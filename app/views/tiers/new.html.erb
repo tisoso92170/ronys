@@ -4,7 +4,7 @@
     <header class="modal-card-head">
         <p class="modal-card-title">Création d'un nouveau tiers</p>
     </header>
-    <%= form_with scope: :tier, class: "is-border", local: true do |f| %>
+    <%= form_with scope: :tier, url: tiers_path, class: "is-border", local: true do |f| %>
         <table class=" table is-narrow">
             <thead>
             </thead>
@@ -22,6 +22,8 @@
                     <th><%= f.text_field :prospect_customer, class: "input" %></th>
                     <th><%= f.label :code_client, class: "label-input" %><br></th>
                     <th><%= f.text_field :code_customer, class: "input" %></th>
+                    <th><%= f.label :code_fournisseur, class: "label-input" %><br></th>
+                    <th><%= f.text_field :code_provider, class: "input" %></th>
 
                 </tr>
                 <tr>
@@ -32,7 +34,7 @@
                 </tr>
                 <tr>
                     <th><%= f.label :Adresse, class: "label-input" %><br></th>
-                    <th><%= f.text_area :adress, class: "textarea is-small" %></th>
+                    <th><%= f.text_area :adress, class: "textarea is-small"%></th>
                 </tr>
                 <tr>
                     <th><%= f.label :code_postale, class: "label-input" %><br></th>
@@ -70,8 +72,6 @@
                 </tr>
 
                 <tr>
-                    <th><%= f.label :fournisseur?, class: "label-input" %><br></th>
-                    <th><%= f.check_box :provider?, class: "checkbox" %></th>
                     <th><%= f.label :etat, class: "label-input" %><br></th>
                     <th><%= f.text_field :etat, class: "input" %></th>
                 </tr>
@@ -104,7 +104,7 @@
                 
                 <tr>
                     <th><%= f.label :Logo, class: "label-input" %><br></th>
-                    <th><%= f.file_field :logo, class: "input" %></th>
+                    <th><%= f.file_field :avatar, class: "input" %></th>
                 </tr>
 
             </tr>
@@ -114,10 +114,12 @@
         <footer class="modal-card-foot">
             <div class="columns">
                 <div class="column" style="margin-bottom: 10px; margin-left: 10px;">
-                <button class="button is-large is-fullwidth is-success"><i class="fa fa-save">  Sauvegarder</i></button>
+                    <%= f.submit 'Enregistrer', :class => 'button is-large is-fullwidth is-success' %>
                 </div>
                 <div class="column" style="margin-right: 10px;">
-                    <button class="button is-large is-fullwidth is-danger"><i class="fa fa-window-close">  Annuler</i></button>
+                    <%= button_tag( :class => "button is-large is-fullwidth is-warning") do %>
+                        <i class="fa fa-save">  Annuler</i>
+                    <% end %>
                 </div>
             </div>
         </footer>
