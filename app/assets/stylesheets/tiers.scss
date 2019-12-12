@@ -1,0 +1,36 @@
+// Place all the styles related to the Tiers controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+@import url('https://fonts.googleapis.com/css?family=Girassol&display=swap');
+
+.container_list {
+    width: 228px;
+    height: 100%;
+    margin-left: 0px;
+    border-right: 2px solid blueviolet;
+    border-radius: 1px;
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #f16f89;
+    .menu {
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+    .menu-list a {
+        font-family: 'Girassol', cursive;
+        color: #2c2727;
+      }
+    .menu-list a:hover {
+        font-family: 'Girassol', cursive;
+        background-color: #f14668;
+        color: #363636;
+      }
+}
+
+.container-tiers {
+    font-family: 'Gelasio', serif;
+    margin-top: 50px;
+    margin-left: 300px;;
+}

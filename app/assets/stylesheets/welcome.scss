@@ -1,0 +1,118 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+@import url('https://fonts.googleapis.com/css?family=Gelasio|Lobster&display=swap');
+
+.card {
+    margin-right: 15px;
+}
+
+.card-header-theme {
+    background-color: #f14668;
+    align-items: stretch;
+    box-shadow: 0 0.125em 0.25em rgba(10, 10, 10, 0.1);
+    display: flex;
+  }
+
+  .card-header-title {
+    align-items: center;
+    color: #f3eded;
+    display: flex;
+    flex-grow: 1;
+    font-weight: 700;
+    padding: 0.75rem 1rem;
+
+  }
+
+  .card-header-title-theme {
+    align-items: center;
+    color: whitesmoke;
+    display: flex;
+    flex-grow: 1;
+    font-weight: 700;
+    padding: 0.75rem 1rem;
+
+  }
+
+.bold {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Lobster', cursive;
+}
+
+.button.is-dark {
+  background-color: #181515;
+  border-color: transparent;
+  color: #fff;
+  font-family: 'Gelasio', serif;
+}
+
+.button.is-dark:hover, .button.is-dark.is-hovered {
+  background-color: #f14668;
+  border-color: transparent;
+  color: #fff;
+  font-family: 'Gelasio', serif;
+}
+
+.button.is-warning {
+  background-color: yellow;
+  border-color: transparent;
+  color: #1d1b1b;
+  font-family: 'Gelasio', serif;
+
+}
+
+.button.is-dark:hover, .button.is-dark.is-hovered {
+  background-color: #884f5a;
+  border-color: transparent;
+  color: #fff;
+  font-family: 'Gelasio', serif;
+}
+
+.p-title {
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: justify;
+  font-family: 'Gelasio', serif;
+}
+
+.navbar {
+  background-color: white;
+  min-height: 3.25rem;
+  position: relative;
+  z-index: 30;
+  font-family: 'Gelasio', serif;
+  font-size: 17px;
+}
+
+.a-close
+{
+    color: red;
+}
+
+.a-edit
+{
+    color: blue;
+}
+
+.dash-list {
+  margin-left: 5px;
+  margin-right: 2px;
+}
+.dash-list ul {
+    padding-left: 0;
+}
+
+.dash-list li {
+    margin-bottom: 2px;
+}
+.dash-list li:nth-child(even) {
+    background-color: #F2F2F2;
+}
+
+/*.card-body {
+  margin-left: 3px;
+  margin-top: 2px;
+  padding-bottom: 3px;
+}*/
